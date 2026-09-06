@@ -1,0 +1,111 @@
+site_name: LangSmith Türkçe Rehber
+site_description: Sıfırdan senior seviyeye LangSmith — Türkçe kapsamlı kaynak
+site_url: https://emineksknc.github.io/langsmith-turkce/
+repo_url: https://github.com/emineksknc/langsmith-turkce
+repo_name: langsmith-turkce
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: tr
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Aydınlık mod
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Karanlık mod
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search:
+      lang: tr
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Ana Sayfa: index.md
+  - Sözlük: sozluk.md
+  - Kaynaklar: kaynaklar.md
+  - Başlarken:
+      - Kurulum & API Key: baslangic/kurulum.md
+      - İlk Trace: baslangic/ilk-trace.md
+  - Kavramlar:
+      - Run, Trace, Thread, Trajectory: kavramlar/temel-terimler.md
+      - Observability vs Evaluation: kavramlar/observability-vs-evaluation.md
+  - Tracing:
+      - Otomatik İzleme (@traceable): tracing/otomatik-izleme.md
+      - Metadata & Tag'ler: tracing/metadata-taglar.md
+      - Filtreleme & Hassas Veri Maskeleme: tracing/filtreleme-maskeleme.md
+      - Dashboard & Alerts: tracing/dashboard-alerts.md
+  - Evaluation:
+      - Dataset Oluşturma: evaluation/dataset-olusturma.md
+      - evaluate() ile Toplu Değerlendirme: evaluation/evaluate-fonksiyonu.md
+      - LLM-as-judge Evaluator Yazma: evaluation/llm-as-judge.md
+      - LangGraph Grafını Değerlendirme: evaluation/langgraph-degerlendirme.md
+      - Online Evaluation: evaluation/online-evaluation.md
+  - Prompts:
+      - Prompt Hub: prompts/prompt-hub.md
+  - İleri / Production:
+      - Human Feedback & Annotation Queue: ileri-seviye/feedback-annotation.md
+      - CI/CD & Maliyet Takibi: ileri-seviye/cicd-maliyet.md
+      - Organizations, Erişim & Self-hosted Kararı: ileri-seviye/organizasyon-erisim.md
+  - Örnek Proje:
+      - LangGraph Botunu İzleme & Değerlendirme: ornek-proje/langgraph-botu-izleme.md
+  - Alıştırmalar:
+      - Başlangıç Soruları: alistirmalar/baslangic-sorulari.md
+      - Orta Seviye Soruları: alistirmalar/orta-seviye-sorulari.md
+      - İleri Seviye Soruları: alistirmalar/ileri-seviye-sorulari.md
+  - Referans:
+      - Hızlı Referans Tablosu: referans/hizli-referans.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/emineksknc
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/eminekiskanc
+  generator: false
+
+copyright: >
+  Bu site bağımsız, resmi olmayan bir öğretim kaynağıdır — LangChain Inc.
+  tarafından yayımlanmamış veya onaylanmamıştır. LangSmith'in kullanım şartları
+  için resmi dokümantasyona bakınız.
