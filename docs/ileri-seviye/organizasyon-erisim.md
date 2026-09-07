@@ -50,10 +50,16 @@ flowchart TD
 | Veri konumu | LangChain Inc. sunucuları | Kendi altyapınız |
 | Bakım yükü | Yok | Sizde (güncelleme, ölçekleme, yedekleme) |
 | Regülasyon uyumu | Bölgesel veri saklama seçenekleri sınırlı olabilir | Tam kontrol |
-| Maliyet yapısı | Kullanım bazlı abonelik | Altyapı + operasyon maliyeti |
+| Maliyet yapısı | Kullanım bazlı abonelik | Altyapı + operasyon maliyeti + **Enterprise lisansı** |
+
+!!! danger "Self-hosted, Enterprise plana özel bir özelliktir"
+    LangSmith'i kendi altyapınızda çalıştırmak (Docker veya Kubernetes ile) **ücretsiz ya da kendi başınıza deneyebileceğiniz bir seçenek değildir** — resmi dokümana göre bu, **Enterprise Plan'a özel bir ek özelliktir** ve LangChain'in satış ekibinden bir lisans anahtarı almanız gerekir ([Self-hosting LangSmith with Docker](https://docs.langchain.com/langsmith/docker)). Ayrıca **Docker Compose ile kurulum sadece yerel geliştirme/test amaçlıdır — production'da kullanılmaması** açıkça belirtiliyor; production için Kubernetes önerilir ([Deploy self-hosted full platform](https://docs.langchain.com/langsmith/deploy-self-hosted-full-platform)).
+
+!!! note "Farklı bir kavram: Standalone Agent Server"
+    LangSmith'in **tamamını** self-host etmekle, sadece **kendi LangGraph uygulamanızı** self-host etmek farklı şeylerdir. İkincisi için LangSmith control plane'e hiç ihtiyacınız yok — [LangGraph rehberindeki `langgraph build`/`langgraph up`](https://emineksknc.github.io/langgraph-turkce/ileri-seviye/deployment-cli/) ile Docker/Kubernetes üzerinde çalıştırabilirsiniz; tracing için ayrıca LangSmith Cloud'a bağlanabilir ya da bağlanmayabilirsiniz. Detaylar: [Self-host standalone servers](https://docs.langchain.com/langsmith/deploy-standalone-server).
 
 !!! note "Bu rehberin kapsamı"
-    Self-hosted'ın **nasıl kurulacağı** (Kubernetes, Docker Compose, Terraform) platform mühendisliğine ait, ayrı bir uzmanlık alanı — bu rehberin kapsamı dışında. Burada amaç, bir AI/ML mühendisinin "bu kararı kimle, hangi kriterlere göre konuşmam gerekiyor" sorusuna cevap vermek.
+    Self-hosted'ın **nasıl kurulacağı** (Kubernetes, Docker Compose, Terraform, lisans süreci) platform mühendisliğine ait, ayrı bir uzmanlık alanı — bu rehberin kapsamı dışında. Burada amaç, bir AI/ML mühendisinin "bu kararı kimle, hangi kriterlere göre konuşmam gerekiyor" sorusuna cevap vermek; yukarıdaki linkler ihtiyaç anında resmi kaynağa hızlı erişim için.
 
 ---
 

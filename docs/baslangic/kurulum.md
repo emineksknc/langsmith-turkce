@@ -37,4 +37,4 @@ client = Client()
 print("LangSmith bağlantısı hazır ✔")
 ```
 
-Hata almadıysanız hazırsınız — sıradaki adım: [İlk Trace](ilk-trace.md).
+Hata almadıysanız hazırsınız — sıradaki adım: [Yerel Geliştirme Ortamının Kurulması](yerel-kurulum.md) ile bilgisayarında baştan sona çalışan bir ortam kur.

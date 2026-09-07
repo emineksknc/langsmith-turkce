@@ -70,6 +70,7 @@ nav:
   - Kaynaklar: kaynaklar.md
   - Başlarken:
       - Kurulum & API Key: baslangic/kurulum.md
+      - Yerel Geliştirme Ortamı: baslangic/yerel-kurulum.md
       - İlk Trace: baslangic/ilk-trace.md
   - Kavramlar:
       - Run, Trace, Thread, Trajectory: kavramlar/temel-terimler.md
@@ -83,6 +84,7 @@ nav:
       - Dataset Oluşturma: evaluation/dataset-olusturma.md
       - evaluate() ile Toplu Değerlendirme: evaluation/evaluate-fonksiyonu.md
       - LLM-as-judge Evaluator Yazma: evaluation/llm-as-judge.md
+      - RAG Evaluation: evaluation/rag-evaluation.md
       - LangGraph Grafını Değerlendirme: evaluation/langgraph-degerlendirme.md
       - Online Evaluation: evaluation/online-evaluation.md
   - Prompts:

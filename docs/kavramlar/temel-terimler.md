@@ -22,7 +22,7 @@ flowchart TD
 
 ## Thread (iş parçacığı / konuşma dizisi)
 
-**Thread**, birden fazla trace'i **tek bir konuşma** altında gruplayan kimliktir — [LangGraph'taki `thread_id`](https://emineksknc.github.io/langgraph-turkce/orta-seviye/checkpointer/) kavramıyla birebir aynı fikirdir. Bir kullanıcıyla 5 mesajlık bir konuşma, LangSmith'te aynı thread altında 5 ayrı trace olarak görünür — UI'da "bu konuşmanın tamamını göster" dediğinizde hepsini bir arada görürsünüz.
+**Thread**, birden fazla trace'i **tek bir konuşma** altında gruplayan kimliktir. Kavramsal olarak, [LangGraph'taki `thread_id`](https://emineksknc.github.io/langgraph-turkce/orta-seviye/checkpointer/) ile aynı amaca hizmet eder: LangGraph'ta `thread_id`, çok turlu bir konuşmayı aynı kimlik altında ilişkilendirip state'i devam ettirmek için kullanılır; LangSmith'teki Thread ise ilişkili run'ları/trace'leri aynı konuşma bağlamında gruplamak için kullanılır. İkisi birebir aynı veri modeli değildir, ama pratikte genelde aynı `thread_id` değeri her iki sistemde de kullanılır. Bir kullanıcıyla 5 mesajlık bir konuşma, LangSmith'te aynı thread altında 5 ayrı trace olarak görünür — UI'da "bu konuşmanın tamamını göster" dediğinizde hepsini bir arada görürsünüz.
 
 ## Trajectory (izlence)
 

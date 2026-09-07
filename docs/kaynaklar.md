@@ -29,8 +29,9 @@ Bu sayfa, rehberdeki her ana konunun **resmi LangSmith dokümantasyonundaki** ka
 | [Dataset Oluşturma](evaluation/dataset-olusturma.md) | [Manage datasets programmatically](https://docs.langchain.com/langsmith/manage-datasets-programmatically) |
 | [evaluate() ile Değerlendirme](evaluation/evaluate-fonksiyonu.md) | [Evaluate LLM applications](https://docs.langchain.com/langsmith/evaluate-llm-application) |
 | [LLM-as-judge](evaluation/llm-as-judge.md) | [LLM-as-judge SDK](https://docs.langchain.com/langsmith/llm-as-judge-sdk) |
+| [RAG Evaluation](evaluation/rag-evaluation.md) | Resmi dokümanda ayrı bir "RAG Evaluation" sayfası yok — [Evaluation concepts](https://docs.langchain.com/langsmith/evaluation-concepts) içindeki genel evaluator türlerine dayanır, bu rehberin kendi sentezi |
 | [LangGraph Grafını Değerlendirme](evaluation/langgraph-degerlendirme.md) | Resmi dokümanda ayrı bir sayfa yok — bu rehberin LangGraph rehberiyle köprüsü |
-| [Online Evaluation](evaluation/online-evaluation.md) | [Online evaluations](https://docs.langchain.com/langsmith/online-evaluations-llm-as-judge), [Automation rules](https://docs.langchain.com/langsmith/rules) |
+| [Online Evaluation](evaluation/online-evaluation.md) | [Set up LLM-as-judge online evaluators](https://docs.langchain.com/langsmith/online-evaluations-llm-as-judge), [Set up online code evaluators](https://docs.langchain.com/langsmith/online-evaluations-code) |
 
 ## Prompts
 
@@ -44,7 +45,7 @@ Bu sayfa, rehberdeki her ana konunun **resmi LangSmith dokümantasyonundaki** ka
 |---|---|
 | [Human Feedback & Annotation Queue](ileri-seviye/feedback-annotation.md) | [Annotation queues SDK](https://docs.langchain.com/langsmith/annotation-queues-sdk) |
 | [CI/CD & Maliyet Takibi](ileri-seviye/cicd-maliyet.md) | Resmi dokümanda ayrı bir sayfa yok — bu rehberin kendi pratik önerileri |
-| [Organizations, Erişim & Self-hosted Kararı](ileri-seviye/organizasyon-erisim.md) | [Administration overview](https://docs.langchain.com/langsmith/administration-overview) (kavram düzeyinde özetlenmiştir, deployment adımları hariç) |
+| [Organizations, Erişim & Self-hosted Kararı](ileri-seviye/organizasyon-erisim.md) | [Administration overview](https://docs.langchain.com/langsmith/administration-overview), [Self-hosting with Docker](https://docs.langchain.com/langsmith/docker), [Deploy self-hosted full platform](https://docs.langchain.com/langsmith/deploy-self-hosted-full-platform), [Standalone Agent Servers](https://docs.langchain.com/langsmith/deploy-standalone-server) (kavram düzeyinde özetlenmiştir, deployment adımları hariç) |
 
 ## Kapsam dışı bıraktığımız konular
 

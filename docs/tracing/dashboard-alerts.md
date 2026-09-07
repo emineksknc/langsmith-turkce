@@ -26,12 +26,15 @@ Belirli metadata/tag kombinasyonlarına göre özel bir görünüm oluşturmak i
 
 Belirli bir eşik aşıldığında otomatik bildirim almak için proje ayarlarından alert kurabilirsiniz:
 
-| Alert türü | Tipik eşik | Ne zaman tetiklenir |
+| Alert türü | Örnek eşik | Ne zaman tetiklenir |
 |---|---|---|
 | Hata oranı | %5 üzeri | Son N dakikada hata oranı eşiği aşarsa |
 | Latency | p95 > 10sn | Yavaşlama tespit edilirse |
 | Maliyet | Günlük $X üzeri | Beklenmeyen maliyet artışı |
 | Feedback skoru | Ortalama < 0.7 | Kullanıcı memnuniyeti düşerse (bkz. [Human Feedback](../ileri-seviye/feedback-annotation.md)) |
+
+!!! warning "Bunlar örnek eşiklerdir, LangSmith'in 'doğru' değerleri değil"
+    Tablodaki sayılar sadece **başlangıç noktası** olarak düşünülmelidir. Gerçek eşikler, uygulamanızın kendi SLO/SLA'sına (hizmet seviyesi hedefi/anlaşması) göre belirlenmelidir — bir sağlık uygulamasında %5 hata oranı kabul edilemezken, deneysel bir iç araçta %5 makul olabilir.
 
 Alert'ler Slack/e-posta entegrasyonu ile bildirim gönderebilir — proje ayarlarından webhook URL'i eklemeniz yeterlidir.
 

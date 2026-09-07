@@ -65,6 +65,24 @@ Bu sayfada rehber boyunca geçen terimler, orijinal İngilizce karşılıklarıy
 **LLM-as-judge (yargıç olarak LLM)**
 : Bir LLM'in, başka bir uygulamanın çıktısının kalitesini otomatik olarak puanlaması yöntemi.
 
+**Pairwise evaluation (ikili karşılaştırma)**
+: İki farklı çıktıyı (ör. iki prompt versiyonu) birlikte yargı modele gösterip hangisinin daha iyi olduğuna karar verdirme yöntemi — mutlak skorlamadan daha tutarlı sonuç verir.
+
+**Position bias, verbosity bias, self-preference**
+: LLM-as-judge'ın sistematik hataları: sırasıyla ilk gösterilen cevabı, daha uzun cevabı, ya da kendi model ailesinin cevabını haksız yere tercih etme eğilimi.
+
+**Context relevance (bağlam alaka düzeyi)**
+: Bir RAG sisteminde, retriever'ın getirdiği belgelerin soruyla ne kadar alakalı olduğunun ölçüsü.
+
+**Faithfulness / Groundedness (bağlılık)**
+: Üretilen cevabın, verilen kaynağa/bağlama ne kadar sadık kaldığının ölçüsü — düşük faithfulness halüsinasyona işaret eder.
+
+**Answer relevance (cevap alaka düzeyi)**
+: Cevabın, kaynağa sadık olsa bile, gerçekten sorulan soruyu cevaplayıp cevaplamadığının ölçüsü.
+
+**Online Evaluator**
+: Production trafiği üzerinde, UI'dan (Tracing Projects → Evaluators) yapılandırılan, filtre + örnekleme oranıyla çalışan otomatik değerlendirme kuralı.
+
 **Offline evaluation**
 : Sabit bir dataset üzerinde, deploy öncesi yapılan değerlendirme.
 

@@ -4,6 +4,16 @@
 
 ## CI/CD'ye entegre değerlendirme
 
+```mermaid
+flowchart LR
+    push[git push / PR] --> actions[GitHub Actions]
+    actions --> pytest[pytest çalıştır]
+    pytest --> eval["client.evaluate()"]
+    eval --> check{skor >= eşik?}
+    check -- evet --> merge[Merge'e izin ver]
+    check -- hayır --> fail[Build'i başarısız yap]
+```
+
 [evaluate()](../evaluation/evaluate-fonksiyonu.md), normal bir Python fonksiyonu olduğu için `pytest` içinde doğrudan kullanılabilir — her pull request'te kaliteyi otomatik doğrulamak için:
 
 ```python

@@ -93,6 +93,18 @@ client = Client(
     - **Belirli alanları maskeleyip geri kalanını görmek istiyorsan** → `anonymizer`
     - **Belirli çağrıları koşullu olarak gizlemek istiyorsan** → `hide_inputs`/`hide_outputs` fonksiyonları
 
+## Neyi maskelemeli, neyi maskelememelisin?
+
+| ❌ Maskelenmeli | ✅ Güvenle bırakılabilir |
+|---|---|
+| T.C. kimlik no, pasaport no | Trace metadata (proje adı, ortam) |
+| E-posta, telefon, adres | Model versiyonu |
+| API key, access token, şifre | Latency, token kullanımı |
+| Kullanıcıya özel finansal/sağlık bilgisi | Hata mesajı tipi (içeriği değil) |
+
+!!! danger "Trace edebilmek ≠ her şeyi trace etmek"
+    Maskeleme, sadece "LangSmith'e ne gönderiyorum" sorusuyla sınırlı değildir — uygulamanızın **tüm loglama/tracing katmanının** (kendi log dosyalarınız, üçüncü parti APM araçları dahil) bu prensiple tasarlanması gerekir. LangSmith'te maskelediğiniz bir veriyi başka bir logda maskelemeden bırakmak, sorunu çözmez, sadece taşır.
+
 ---
 
 Sıradaki adım: [Dashboard & Alerts](dashboard-alerts.md).
